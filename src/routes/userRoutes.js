@@ -11,6 +11,6 @@ export default router;
 .index => listar todos => GET
 .store/.create => criar novo => POST
 .delete => apaga um => DELETE
-.show => mostra um
-.update => atualiza um
+.show => mostra um => GET
+.update => atualiza um => PATCH ou PUT
 */
