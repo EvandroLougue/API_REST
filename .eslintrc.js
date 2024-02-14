@@ -23,6 +23,9 @@ module.exports = {
   },
   rules: {
     "no-console": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "indent": "off",
+    "import/first": "off",
+    "no-param-reassign": "off",
   },
 };
