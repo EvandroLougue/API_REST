@@ -4,24 +4,34 @@ class UserController {
   async store(req, res) {
     try {
       const novoUser = await User.create(req.body);
-      res.json(novoUser);
+      return res.json(novoUser);
     } catch (e) {
-      res.status(400).json({
+      return res.status(400).json({
         errors: e.errors.map((err) => err.message),
       });
     }
   }
+  // INDEX
+  async index(req, res) {
+    try {
+      const users = await User.findAll();
+      return res.json(users);
+    } catch (e) {
+      return res.json(null);
+    }
+  }
+
+  // SHOW
+
+
+  // UPDATE
+
+
+  // DELETE
+
+
 }
 
-// INDEX
 
-
-// SHOW
-
-
-// UPDATE
-
-
-// DELETE
 
 export default new UserController();

@@ -27,5 +27,6 @@ module.exports = {
     "indent": "off",
     "import/first": "off",
     "no-param-reassign": "off",
+    "lines-between-class-members": "off"
   },
 };
